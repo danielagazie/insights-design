@@ -4,13 +4,19 @@
     box-sizing: border-box;
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
 body {
+    display:flex;
     font-family: sans-serif;
     background-color: black;
     color: white;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
 }
 
 .insights-section {
@@ -20,7 +26,6 @@ body {
     overflow: hidden;
     max-width: 1000px;
     width: 90%;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
 }
 
 .text-content {
@@ -51,15 +56,9 @@ body {
     gap: 40px;
 }
 
-.stat-item h2 {
-    font-size: 1.5rem;
-    font-weight: 700;
-}
-
 .stat-item p {
     font-size: 0.75rem;
     color: white;
-    letter-spacing: 1px;
     margin-top: 5px;
 }
 
